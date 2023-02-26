@@ -95,7 +95,7 @@ public class principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("otro");
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
