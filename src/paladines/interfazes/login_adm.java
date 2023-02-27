@@ -208,9 +208,6 @@ public class login_adm extends javax.swing.JFrame {
        String usuario = txtUsuario.getText();
        String password = Arrays.toString(txtPassword.getPassword());
        
-        if (usuario.equals()) {
-            
-        }
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
