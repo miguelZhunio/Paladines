@@ -162,7 +162,7 @@ public class login_vendedor extends javax.swing.JFrame {
         this.dispose();
         principal regresarPrincipal = new principal();
         regresarPrincipal.setVisible(true);
-        //subir
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed

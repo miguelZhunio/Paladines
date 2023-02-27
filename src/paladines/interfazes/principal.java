@@ -137,7 +137,7 @@ public class principal extends javax.swing.JFrame {
        this.dispose();
         login_vendedor iniciarVendedor = new login_vendedor();
         iniciarVendedor.setVisible(true);
-        //realizado
+        
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
