@@ -37,31 +37,31 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        nom = new javax.swing.JTextField();
+        NomVend = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        apll = new javax.swing.JTextField();
+        ApllVend = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        ced = new javax.swing.JTextField();
+        cedVend = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        mail = new javax.swing.JTextField();
+        mailVend = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        ciud = new javax.swing.JComboBox<>();
+        ciudVend = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        cell = new javax.swing.JTextField();
+        cellVend = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        direc = new javax.swing.JTextField();
+        direcVend = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        edad = new javax.swing.JSpinner();
+        edadVend = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        regisVend = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        post = new javax.swing.JTextField();
+        postVend = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        ContraVend = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 102, 0)), "Registro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 0))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -74,9 +74,9 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 102));
         jLabel2.setText("Nombres:");
 
-        nom.addActionListener(new java.awt.event.ActionListener() {
+        NomVend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomActionPerformed(evt);
+                NomVendActionPerformed(evt);
             }
         });
 
@@ -96,10 +96,10 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 102));
         jLabel6.setText("Ciudad");
 
-        ciud.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cuenca", "Quito", "Ambato", "Azogues", "Otavalo", "Riobamba" }));
-        ciud.addActionListener(new java.awt.event.ActionListener() {
+        ciudVend.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cuenca", "Quito", "Ambato", "Azogues", "Otavalo", "Riobamba" }));
+        ciudVend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ciudActionPerformed(evt);
+                ciudVendActionPerformed(evt);
             }
         });
 
@@ -107,9 +107,9 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 102));
         jLabel7.setText("Contraseña:");
 
-        cell.addActionListener(new java.awt.event.ActionListener() {
+        cellVend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellActionPerformed(evt);
+                cellVendActionPerformed(evt);
             }
         });
 
@@ -121,7 +121,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(0, 0, 102));
         jLabel9.setText("Celular:");
 
-        edad.setModel(new javax.swing.SpinnerNumberModel(18, 18, null, 1));
+        edadVend.setModel(new javax.swing.SpinnerNumberModel(18, 18, null, 1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setText("ATRAS");
@@ -131,11 +131,11 @@ public class Registro_Vendedor extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton2.setText("GUARDAR");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        regisVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        regisVend.setText("REGISTRAR");
+        regisVend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                regisVendActionPerformed(evt);
             }
         });
 
@@ -147,9 +147,9 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(0, 0, 102));
         jLabel11.setText("Direccion:");
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        ContraVend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                ContraVendActionPerformed(evt);
             }
         });
 
@@ -163,61 +163,60 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(post, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jButton2)
-                                        .addGap(72, 72, 72)
-                                        .addComponent(jButton1)))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(35, 35, 35)
-                                .addComponent(ced))
+                                .addComponent(cedVend))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(18, 18, 18)
-                                .addComponent(apll))
+                                .addComponent(ApllVend))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
-                                .addComponent(nom))
+                                .addComponent(NomVend))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(mail)
-                                    .addComponent(cell)))))
+                                    .addComponent(mailVend)
+                                    .addComponent(cellVend)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(edadVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel10))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(postVend, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(regisVend)
+                                        .addGap(72, 72, 72)
+                                        .addComponent(jButton1)))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel8))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addComponent(jLabel9))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(51, 51, 51)
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ciud, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(direc))))
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel6))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ciudVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(direcVend))))
                 .addGap(70, 70, 70))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ContraVend, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(jLabel11)
-                    .addContainerGap(426, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,26 +226,26 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(nom))
+                    .addComponent(NomVend))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(apll, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ApllVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ced, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cedVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(mailVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ContraVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ciud, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ciudVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -257,25 +256,22 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(direc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(direcVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22)))
+                        .addComponent(cellVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(edadVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(post, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(postVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(regisVend)
                     .addComponent(jButton1))
                 .addGap(64, 64, 64))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(303, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(209, 209, 209)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -298,15 +294,15 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ciudActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ciudActionPerformed
+    private void ciudVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ciudVendActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ciudActionPerformed
+    }//GEN-LAST:event_ciudVendActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void regisVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regisVendActionPerformed
         // TODO add your handling code here:
 //        try{
 //            Persona per=new Persona();
@@ -324,19 +320,19 @@ dispose();        // TODO add your handling code here:
 //        }catch (Exception e){
 //            JOptionPane.showInternalMessageDialog(this, "Error al ingresar un dato");
 //        }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_regisVendActionPerformed
 
-    private void nomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomActionPerformed
+    private void NomVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomVendActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomActionPerformed
+    }//GEN-LAST:event_NomVendActionPerformed
 
-    private void cellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellActionPerformed
+    private void cellVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellVendActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cellActionPerformed
+    }//GEN-LAST:event_cellVendActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void ContraVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraVendActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_ContraVendActionPerformed
 
     /**
      * @param args the command line arguments
@@ -375,14 +371,15 @@ dispose();        // TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField apll;
-    private javax.swing.JTextField ced;
-    private javax.swing.JTextField cell;
-    private javax.swing.JComboBox<String> ciud;
-    private javax.swing.JTextField direc;
-    private javax.swing.JSpinner edad;
+    private javax.swing.JTextField ApllVend;
+    private javax.swing.JPasswordField ContraVend;
+    private javax.swing.JTextField NomVend;
+    private javax.swing.JTextField cedVend;
+    private javax.swing.JTextField cellVend;
+    private javax.swing.JComboBox<String> ciudVend;
+    private javax.swing.JTextField direcVend;
+    private javax.swing.JSpinner edadVend;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -395,9 +392,8 @@ dispose();        // TODO add your handling code here:
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField mail;
-    private javax.swing.JTextField nom;
-    private javax.swing.JTextField post;
+    private javax.swing.JTextField mailVend;
+    private javax.swing.JTextField postVend;
+    private javax.swing.JButton regisVend;
     // End of variables declaration//GEN-END:variables
 }
