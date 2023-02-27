@@ -134,9 +134,10 @@ public class principal extends javax.swing.JFrame {
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
       // TODO add your handling code here:
-       this.dispose();;
+       this.dispose();
         login_vendedor iniciarVendedor = new login_vendedor();
         iniciarVendedor.setVisible(true);
+        //realizado
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
