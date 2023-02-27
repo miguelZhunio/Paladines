@@ -60,7 +60,7 @@ public class principal extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/registrarse.png"))); // NOI18N
         jMenu1.setText("Login");
 
-        jMenu3.setText("Iniciar secion");
+        jMenu3.setText("Iniciar sesion");
 
         jMenuItem5.setText("Administrador");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +121,9 @@ public class principal extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        login_adm registro= new login_adm();
+        registro.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
