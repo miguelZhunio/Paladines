@@ -18,6 +18,7 @@ public class loginComprador extends javax.swing.JFrame {
      */
     public loginComprador() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -37,12 +38,16 @@ public class loginComprador extends javax.swing.JFrame {
         ContraCom = new javax.swing.JPasswordField();
         IngresarComp = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        regiscomp = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 102));
         jLabel1.setText("Login Comprador");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
@@ -62,8 +67,22 @@ public class loginComprador extends javax.swing.JFrame {
         IngresarComp.setText("Ingresar");
 
         jButton2.setBackground(new java.awt.Color(0, 102, 102));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/flecha-hacia-atras.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha-hacia-atras.png"))); // NOI18N
         jButton2.setText("Regresar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        regiscomp.setBackground(new java.awt.Color(0, 102, 102));
+        regiscomp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/registrarse.png"))); // NOI18N
+        regiscomp.setText("Registrase");
+        regiscomp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regiscompActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -86,18 +105,20 @@ public class loginComprador extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(CorreoComp, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
+                        .addGap(23, 23, 23)
                         .addComponent(IngresarComp)
-                        .addGap(27, 27, 27)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addComponent(regiscomp)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton2)))
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(CorreoComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -105,29 +126,18 @@ public class loginComprador extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(ContraCom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(IngresarComp)
-                    .addComponent(jButton2))
-                .addGap(35, 35, 35))
+                    .addComponent(jButton2)
+                    .addComponent(regiscomp))
+                .addGap(71, 71, 71))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 370, 170));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/Fondo_loginVendedor.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 13, 660, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -135,6 +145,18 @@ public class loginComprador extends javax.swing.JFrame {
     private void ContraComActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraComActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ContraComActionPerformed
+
+    private void regiscompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regiscompActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        Registro_Vendedor rgven=new Registro_Vendedor();
+        rgven.setVisible(true);
+    }//GEN-LAST:event_regiscompActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,6 +201,8 @@ public class loginComprador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton regiscomp;
     // End of variables declaration//GEN-END:variables
 }

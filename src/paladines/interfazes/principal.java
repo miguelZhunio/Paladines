@@ -15,6 +15,7 @@ public class principal extends javax.swing.JFrame {
      */
     public principal() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -152,6 +153,9 @@ public class principal extends javax.swing.JFrame {
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Registro_Vendedor Rgvend=new Registro_Vendedor();
+        Rgvend.setVisible(true);
         
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
