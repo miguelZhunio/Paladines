@@ -4,25 +4,32 @@ package paladines.clases;
  *
  * @author Zhunio Miguel
  */
-public final class Administrador {
-    private final String name = "admin";
-    private final String password = "1234567890";
+public final class Administrador extends Persona{
+    private String rol;
 
     public Administrador() {
+        
+    }
+    public Administrador(String rol) {
+        this.rol = rol;
     }
 
-    public String getName() {
-        return name;
+    public Administrador(String rol, String cedula, String nombre, String apellido, String telefono, char Sexo, String correo, int edad, String password) {
+        super(cedula, nombre, apellido, telefono, Sexo, correo, edad, password);
+        this.rol = rol;
     }
 
-    public String getPassword() {
-        return password;
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     @Override
     public String toString() {
-        return "Administrador{" + "name=" + name + ", password=" + password + '}';
+        return "Administrador{" + "rol=" + rol + '}';
     }
-    
     
 }

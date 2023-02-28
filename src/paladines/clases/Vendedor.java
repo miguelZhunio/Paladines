@@ -5,25 +5,30 @@ package paladines.clases;
  * @author Zhunio Miguel
  */
 public class Vendedor extends Persona{
+    private String nombreComercial;
     private Granja granja;
-    private int calificacion;
-
-    public Vendedor(Granja granja) {
-        this.granja = granja;
-    }
+    
     public Vendedor() {
         super();
     }
 
-    public Vendedor(Granja granja, int calificacion) {
+    public Vendedor(String nombreComercial, Granja granja, int calificacion) {
+        this.nombreComercial = nombreComercial;
         this.granja = granja;
-        this.calificacion = calificacion;
     }
 
-    public Vendedor(Granja granja, int calificacion, String cedula, String nombre, String apellido, String telefono, char Sexo, String correo, int edad, String password) {
+    public Vendedor(String nombreComercial, Granja granja, int calificacion, String cedula, String nombre, String apellido, String telefono, char Sexo, String correo, int edad, String password) {
         super(cedula, nombre, apellido, telefono, Sexo, correo, edad, password);
+        this.nombreComercial = nombreComercial;
         this.granja = granja;
-        this.calificacion = calificacion;
+    }
+
+    public String getNombreComercial() {
+        return nombreComercial;
+    }
+
+    public void setNombreComercial(String nombreComercial) {
+        this.nombreComercial = nombreComercial;
     }
 
     public Granja getGranja() {
@@ -34,17 +39,9 @@ public class Vendedor extends Persona{
         this.granja = granja;
     }
 
-    public int getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(int calificacion) {
-        this.calificacion = calificacion;
-    }
-
     @Override
     public String toString() {
-        return "Vendedor{" + "granja=" + granja + ", calificacion=" + calificacion + '}';
+        return "Vendedor{" + "nombreComercial=" + nombreComercial + ", granja=" + granja + '}';
     }
-    
+   
 }
