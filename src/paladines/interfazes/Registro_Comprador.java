@@ -72,7 +72,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("REGISTRO DE CLIENTE");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 430, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 430, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
@@ -194,7 +194,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jPanel3.add(masculino, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 269, -1, -1));
 
         femenino.setText("Femenino");
-        jPanel3.add(femenino, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 269, -1, -1));
+        jPanel3.add(femenino, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, -1, -1));
 
         edad.setModel(new javax.swing.SpinnerNumberModel(18, 18, null, 1));
         jPanel3.add(edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 234, -1, -1));
