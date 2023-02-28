@@ -1,4 +1,7 @@
-package paladines.clases;
+package paladines.clases.usuarios;
+
+import paladines.clases.Granja;
+import paladines.clases.usuarios.Persona;
 
 /**
  *

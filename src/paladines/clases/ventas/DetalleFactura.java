@@ -1,4 +1,5 @@
-package paladines.clases;
+package paladines.clases.ventas;
+
 
 /**
  *
@@ -7,14 +8,14 @@ package paladines.clases;
 public class DetalleFactura {
     private String id_fac;
     private int cantidad;
-    private Ganado ganado_vendido;
+    private Object ganado_vendido;
     private double valor;
 
     public DetalleFactura() {
         
     }
 
-    public DetalleFactura(String id_fac, int cantidad, Ganado ganado_vendido, double valor) {
+    public DetalleFactura(String id_fac, int cantidad, Object ganado_vendido, double valor) {
         this.id_fac = id_fac;
         this.cantidad = cantidad;
         this.ganado_vendido = ganado_vendido;
@@ -37,11 +38,11 @@ public class DetalleFactura {
         this.cantidad = cantidad;
     }
 
-    public Ganado getGanado_vendido() {
+    public Object getGanado_vendido() {
         return ganado_vendido;
     }
 
-    public void setGanado_vendido(Ganado ganado_vendido) {
+    public void setGanado_vendido(Object ganado_vendido) {
         this.ganado_vendido = ganado_vendido;
     }
 

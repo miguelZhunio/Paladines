@@ -1,5 +1,6 @@
 package paladines.clases;
 
+import paladines.clases.usuarios.Vendedor;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

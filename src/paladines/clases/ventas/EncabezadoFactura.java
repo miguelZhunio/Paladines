@@ -1,5 +1,6 @@
-package paladines.clases;
+package paladines.clases.ventas;
 
+import paladines.clases.usuarios.Comprador;
 import java.util.Date;
 
 /**

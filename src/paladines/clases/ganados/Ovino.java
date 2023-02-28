@@ -1,4 +1,6 @@
-package paladines.clases;
+package paladines.clases.ganados;
+
+import paladines.clases.ganados.Ganado;
 
 /**
  *

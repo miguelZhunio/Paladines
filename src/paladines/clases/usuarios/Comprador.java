@@ -1,4 +1,4 @@
-package paladines.clases;
+package paladines.clases.usuarios;
 
 /**
  *
