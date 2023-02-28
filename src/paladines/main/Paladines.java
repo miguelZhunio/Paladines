@@ -5,6 +5,8 @@
  */
 package paladines.main;
 
+import paladines.interfazes.principal;
+
 /**
  *
  * @author PC01
@@ -15,7 +17,10 @@ public class Paladines {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Llamamos a la ventana Principal
+        principal mostrarPrincipal = new principal();
+        mostrarPrincipal.setVisible(true);
+        
     }
     
 }
