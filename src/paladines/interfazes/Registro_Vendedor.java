@@ -54,7 +54,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         regisVend = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        postVend = new javax.swing.JTextField();
+        CodPostal = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         ContraVend = new javax.swing.JPasswordField();
         jLabel13 = new javax.swing.JLabel();
@@ -207,7 +207,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                                                     .addComponent(jLabel6)
                                                     .addGap(27, 27, 27)
                                                     .addComponent(ciudVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(postVend, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(CodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                             .addComponent(jLabel7)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -294,16 +294,16 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                             .addComponent(ciudVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(15, 15, 15)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(postVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
-                .addGap(50, 50, 50)
+                    .addComponent(jLabel10)
+                    .addComponent(CodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(regisVend)
                     .addComponent(jButton1))
                 .addGap(87, 87, 87))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 490, 530));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 490, 570));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/Granja.jpg"))); // NOI18N
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 690, 630));
@@ -316,11 +316,15 @@ public class Registro_Vendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_ciudVendActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-dispose();        // TODO add your handling code here:
+        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void regisVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regisVendActionPerformed
         // TODO add your handling code here:
+         login_vendedor ingresar=new login_vendedor();
+        ingresar.setVisible(true);
+        dispose();
 //        try{
 //            Persona per=new Persona();
 //            per.setNombres(nom.getText());
@@ -363,6 +367,7 @@ dispose();        // TODO add your handling code here:
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ApllVend;
     private javax.swing.JTextField CedVende;
+    private javax.swing.JTextField CodPostal;
     private javax.swing.JPasswordField ContraVend;
     private javax.swing.JPasswordField ContraVend1;
     private javax.swing.JTextField NomVend;
@@ -386,7 +391,6 @@ dispose();        // TODO add your handling code here:
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField mailVend;
-    private javax.swing.JTextField postVend;
     private javax.swing.JButton regisVend;
     // End of variables declaration//GEN-END:variables
 }

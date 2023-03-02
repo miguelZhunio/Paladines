@@ -69,7 +69,7 @@ public class MenuVendedor extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("SALIR");
+        jButton4.setText("CERRAR SESION");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -182,6 +182,8 @@ public class MenuVendedor extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        login_vendedor iniciar=new login_vendedor();
+        iniciar.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 

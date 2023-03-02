@@ -48,7 +48,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="50" width="490" height="530"/>
+          <AbsoluteConstraints x="130" y="50" width="490" height="570"/>
         </Constraint>
       </Constraints>
 
@@ -93,7 +93,7 @@
                                                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                                       <Component id="ciudVend" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="postVend" alignment="0" min="-2" pref="223" max="-2" attributes="0"/>
+                                                  <Component id="CodPostal" min="-2" pref="223" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
@@ -211,10 +211,10 @@
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="postVend" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="CodPostal" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="regisVend" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -415,7 +415,7 @@
             <Property name="text" type="java.lang.String" value="Codigo Postal:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="postVend">
+        <Component class="javax.swing.JTextField" name="CodPostal">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
