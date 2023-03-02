@@ -41,7 +41,6 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         ApllVend = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        cedVend = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         mailVend = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -60,6 +59,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         ContraVend = new javax.swing.JPasswordField();
         jLabel13 = new javax.swing.JLabel();
         ContraVend1 = new javax.swing.JPasswordField();
+        CedVende = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -91,12 +91,6 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 102));
         jLabel4.setText("Cedula:");
-
-        cedVend.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cedVendActionPerformed(evt);
-            }
-        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 102));
@@ -222,15 +216,15 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel2)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(NomVend))
+                                                .addComponent(NomVend, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel3)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel3)
+                                                    .addComponent(jLabel4))
                                                 .addGap(18, 18, 18)
-                                                .addComponent(ApllVend))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel4)
-                                                .addGap(35, 35, 35)
-                                                .addComponent(cedVend, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(ApllVend)
+                                                    .addComponent(CedVende)))))
                                     .addGap(16, 16, 16)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(89, 89, 89)
@@ -245,9 +239,9 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addComponent(ContraVend1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 27, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(97, 97, 97)
+                .addGap(93, 93, 93)
                 .addComponent(regisVend)
-                .addGap(57, 57, 57)
+                .addGap(61, 61, 61)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -267,7 +261,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cedVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CedVende, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -302,17 +296,17 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(postVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
-                .addGap(43, 43, 43)
+                .addGap(50, 50, 50)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(regisVend)
                     .addComponent(jButton1))
-                .addGap(94, 94, 94))
+                .addGap(87, 87, 87))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 490, 550));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 490, 530));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/Granja.jpg"))); // NOI18N
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 690, 630));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 690, 630));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -368,10 +362,10 @@ dispose();        // TODO add your handling code here:
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ApllVend;
+    private javax.swing.JTextField CedVende;
     private javax.swing.JPasswordField ContraVend;
     private javax.swing.JPasswordField ContraVend1;
     private javax.swing.JTextField NomVend;
-    private javax.swing.JTextField cedVend;
     private javax.swing.JTextField cellVend;
     private javax.swing.JComboBox<String> ciudVend;
     private javax.swing.JTextField direcVend;
