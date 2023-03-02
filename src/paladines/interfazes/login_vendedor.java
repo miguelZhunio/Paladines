@@ -134,6 +134,9 @@ public class login_vendedor extends javax.swing.JFrame {
 
 
         // TODO add your handling code here:
+        MenuVendedor menvend=new MenuVendedor();
+        menvend.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
