@@ -164,7 +164,7 @@ public class MenuVendedor extends javax.swing.JFrame {
         Registro_Producto prod=new  Registro_Producto();
         
         prod.setVisible(true);
-        dispose();
+        
                 
     }//GEN-LAST:event_regisActionPerformed
 
