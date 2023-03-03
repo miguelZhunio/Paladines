@@ -46,7 +46,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
         txtApellido = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         txtCodigoPostal = new javax.swing.JTextField();
-        txtCcalle = new javax.swing.JPasswordField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -58,6 +57,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
         txtEdad = new javax.swing.JSpinner();
         cbCiudad = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
+        txtCcalle = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -67,12 +67,11 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(19, 204, 158));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 36)); // NOI18N
         jLabel1.setText("REGISTRO DE CLIENTE");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 430, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 430, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setText("Cedula:");
@@ -112,22 +111,27 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         btnRegresar.setBackground(new java.awt.Color(0, 102, 102));
         btnRegresar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnRegresar.setText("REGRESAR");
+        btnRegresar.setText("CANCELAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 386, -1, 40));
+        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, -1, 40));
 
         btnCrearCuenta.setBackground(new java.awt.Color(0, 102, 102));
         btnCrearCuenta.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCrearCuenta.setText("CREAR CUENTA");
-        jPanel3.add(btnCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 386, -1, 40));
+        jPanel3.add(btnCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, -1, 40));
 
         txtCedula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCedulaActionPerformed(evt);
+            }
+        });
+        txtCedula.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCedulaKeyTyped(evt);
             }
         });
         jPanel3.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 130, 179, -1));
@@ -148,13 +152,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(543, 130, 180, -1));
         jPanel3.add(txtCodigoPostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 234, 90, -1));
 
-        txtCcalle.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCcalleActionPerformed(evt);
-            }
-        });
-        jPanel3.add(txtCcalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(543, 190, 180, -1));
-
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel11.setText("Sexo:");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 265, 76, -1));
@@ -165,7 +162,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel13.setText("Calle:");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, -1));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, -1, -1));
 
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,6 +194,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         jLabel14.setToolTipText("");
         jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(-120, 130, 540, 440));
+        jPanel3.add(txtCcalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 170, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 820, 480));
 
@@ -217,6 +215,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
     private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtCedulaActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
@@ -227,10 +226,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtApellidoActionPerformed
 
-    private void txtCcalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCcalleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCcalleActionPerformed
-
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
@@ -238,6 +233,17 @@ public class Registro_Comprador extends javax.swing.JFrame {
     private void cbCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCiudadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbCiudadActionPerformed
+
+    private void txtCedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean numeros = aux>=48 && aux<=57;
+        if (numeros==false) {
+            System.out.println("Ingreso erroneo: "+evt.getKeyChar());
+            evt.consume();
+        }
+        
+    }//GEN-LAST:event_txtCedulaKeyTyped
 
     /**
      * @param args the command line arguments
@@ -269,7 +275,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdFemenino;
     private javax.swing.JRadioButton rdMasculino;
     private javax.swing.JTextField txtApellido;
-    private javax.swing.JPasswordField txtCcalle;
+    private javax.swing.JTextField txtCcalle;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtCodigoPostal;
     private javax.swing.JSpinner txtEdad;
