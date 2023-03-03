@@ -154,7 +154,9 @@ public class loginComprador extends javax.swing.JFrame {
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
-        dispose();
+        this.dispose();
+        principal mostrarPrincipal = new principal();
+        mostrarPrincipal.setVisible(true);
     }//GEN-LAST:event_btnRegresarActionPerformed
 
     private void txtCorreoCompradorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoCompradorKeyTyped
