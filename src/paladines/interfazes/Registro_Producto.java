@@ -280,7 +280,7 @@ public class Registro_Producto extends javax.swing.JFrame {
         z.setForeground(new java.awt.Color(204, 0, 0));
         z.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/registro producto.jpg"))); // NOI18N
         z.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(z, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 460));
+        getContentPane().add(z, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
