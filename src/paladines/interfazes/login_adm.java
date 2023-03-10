@@ -144,7 +144,7 @@ public class login_adm extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/flecha-hacia-atras.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha-hacia-atras_1.png"))); // NOI18N
         jButton3.setText("Volver ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,8 +212,9 @@ public class login_adm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-       String usuario = txtUsuario.getText();
-       String password = Arrays.toString(txtPassword.getPassword());
+       this.dispose();
+        menu_adm registro= new menu_adm();
+        registro.setVisible(true);
        
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
