@@ -5,6 +5,7 @@
 package paladines.interfazes;
 
 import java.util.Arrays;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -59,6 +60,11 @@ public class login_adm extends javax.swing.JFrame {
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
+            }
+        });
+        txtUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtUsuarioKeyTyped(evt);
             }
         });
 
@@ -194,7 +200,8 @@ public class login_adm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:\
+    
     }//GEN-LAST:event_txtUsuarioActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -209,6 +216,18 @@ public class login_adm extends javax.swing.JFrame {
        String password = Arrays.toString(txtPassword.getPassword());
        
     }//GEN-LAST:event_btnSiguienteActionPerformed
+
+    private void txtUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyTyped
+        // TODO add your handling code here:
+           char aux = evt.getKeyChar();
+        boolean numeros = aux >= '0' && aux <= '9';
+        if (!numeros){
+            JOptionPane.showMessageDialog(this,"CARACTER INCORRECTO:  "+ evt.getKeyChar());
+            evt.consume();
+        }else if (txtUsuario.getText().length() >=9){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtUsuarioKeyTyped
 
     /**
      * @param args the command line arguments

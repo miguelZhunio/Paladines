@@ -16,7 +16,6 @@ public class principal extends javax.swing.JFrame {
     public principal() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //this.setExtendedState(this.MAXIMIZED_BOTH);//Para la pantalla completa
     }
 
     /**
@@ -35,7 +34,6 @@ public class principal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -57,12 +55,10 @@ public class principal extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Algerian", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("\"SISTEMA PALADINES\"");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 420, 90));
+        jLabel1.setText("\"LOS PALADINES\"");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 340, 90));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Siguenos");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 480, -1, 40));
 
@@ -71,16 +67,13 @@ public class principal extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton3.setText("FERIA DE GANADO");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 190, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 420, 190, -1));
 
         jLabel4.setFont(new java.awt.Font("Engravers MT", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("BIENVENIDO");
         jLabel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 260, 20));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/logoPaladines.jpg"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 110, 110));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 260, 20));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/GanadoPrincipal.jpg"))); // NOI18N
         jPanel1.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 610));
@@ -96,6 +89,11 @@ public class principal extends javax.swing.JFrame {
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenuItem5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jMenuItem5KeyTyped(evt);
             }
         });
         jMenu3.add(jMenuItem5);
@@ -190,9 +188,10 @@ public class principal extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+         this.dispose();
         login_adm registro= new login_adm();
         registro.setVisible(true);
+        
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
@@ -242,6 +241,11 @@ public class principal extends javax.swing.JFrame {
         mostrarQuiénesSomos.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void jMenuItem5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jMenuItem5KeyTyped
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jMenuItem5KeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -284,7 +288,6 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

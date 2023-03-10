@@ -1,5 +1,7 @@
 package paladines.interfazes;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Usuario
@@ -26,9 +28,9 @@ public class loginComprador extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtCorreoComprador = new javax.swing.JTextField();
+        txtCorrCom = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtContraComprador = new javax.swing.JPasswordField();
+        txtConComp = new javax.swing.JPasswordField();
         btnIngresarComp = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         btnRegistrarse = new javax.swing.JButton();
@@ -41,29 +43,39 @@ public class loginComprador extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel1.setText("Login Comprador");
+        jLabel1.setText("Iniciar Sesión Cliente");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         jLabel2.setText("Correo");
 
-        txtCorreoComprador.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtCorrCom.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtCorreoCompradorKeyTyped(evt);
+                txtCorrComKeyTyped(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         jLabel3.setText("Contraseña");
 
-        txtContraComprador.addActionListener(new java.awt.event.ActionListener() {
+        txtConComp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtContraCompradorActionPerformed(evt);
+                txtConCompActionPerformed(evt);
+            }
+        });
+        txtConComp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtConCompKeyTyped(evt);
             }
         });
 
         btnIngresarComp.setBackground(new java.awt.Color(0, 102, 102));
         btnIngresarComp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iniciar-sesion.png"))); // NOI18N
         btnIngresarComp.setText("Ingresar");
+        btnIngresarComp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarCompActionPerformed(evt);
+            }
+        });
 
         btnRegresar.setBackground(new java.awt.Color(0, 102, 102));
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha-hacia-atras.png"))); // NOI18N
@@ -90,19 +102,16 @@ public class loginComprador extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtContraComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtConComp, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtCorreoComprador, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtCorrCom, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(btnIngresarComp)
@@ -111,20 +120,24 @@ public class loginComprador extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnRegresar)))
                 .addGap(21, 21, 21))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtCorreoComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCorrCom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(txtContraComprador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtConComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIngresarComp)
@@ -141,32 +154,61 @@ public class loginComprador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtContraCompradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContraCompradorActionPerformed
+    private void txtConCompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConCompActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtContraCompradorActionPerformed
+    }//GEN-LAST:event_txtConCompActionPerformed
 
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
         // TODO add your handling code here:
+        
+        Registro_Comprador rgcomprador=new Registro_Comprador();
+        rgcomprador.setVisible(true);
         this.dispose();
-        Registro_Vendedor rgven=new Registro_Vendedor();
-        rgven.setVisible(true);
     }//GEN-LAST:event_btnRegistrarseActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        principal mostrarPrincipal = new principal();
-        mostrarPrincipal.setVisible(true);
+        principal princ=new principal();
+        princ.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
-    private void txtCorreoCompradorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoCompradorKeyTyped
+    private void txtCorrComKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorrComKeyTyped
         char aux = evt.getKeyChar();
-        boolean error =  aux >= 48 && aux <= 58;
-        if (!error) {
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+        else if (txtCorrCom.getText().length() >= 20) {
             evt.consume();
+        
         }
              
-    }//GEN-LAST:event_txtCorreoCompradorKeyTyped
+    }//GEN-LAST:event_txtCorrComKeyTyped
+
+    private void btnIngresarCompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarCompActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_btnIngresarCompActionPerformed
+
+    private void txtConCompKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtConCompKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean con= aux >= 32&& aux< 126;
+        boolean ret =aux == 127;
+        boolean ent = aux == 10;
+        if(txtConComp.getText().length()> 30 && ent== false){
+            evt.consume();
+        }
+        else if (con== false && ret == false ){
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+    }//GEN-LAST:event_txtConCompKeyTyped
 
     /**
      * @param args the command line arguments
@@ -182,7 +224,7 @@ public class loginComprador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField txtContraComprador;
-    private javax.swing.JTextField txtCorreoComprador;
+    private javax.swing.JPasswordField txtConComp;
+    private javax.swing.JTextField txtCorrCom;
     // End of variables declaration//GEN-END:variables
 }
