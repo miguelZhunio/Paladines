@@ -91,6 +91,11 @@ public class principal extends javax.swing.JFrame {
                 jMenuItem5ActionPerformed(evt);
             }
         });
+        jMenuItem5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jMenuItem5KeyTyped(evt);
+            }
+        });
         jMenu3.add(jMenuItem5);
 
         jMenuItem6.setText("Vendedor");
@@ -183,9 +188,10 @@ public class principal extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+         this.dispose();
         login_adm registro= new login_adm();
         registro.setVisible(true);
+        
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
@@ -234,6 +240,11 @@ public class principal extends javax.swing.JFrame {
         QuiénesSomos mostrarQuiénesSomos = new QuiénesSomos();
         mostrarQuiénesSomos.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jMenuItem5KeyTyped
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jMenuItem5KeyTyped
 
     /**
      * @param args the command line arguments
