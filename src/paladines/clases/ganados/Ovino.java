@@ -19,11 +19,7 @@ public class Ovino extends Ganado{
         this.calidad_lana = calidad_lana;
     }
 
-    public Ovino(int numero_esquilado, String calidad_lana, String codigo, int edad, char sexo, int apariamientos, double size, double peso, double precio, String raza) {
-        super(codigo, edad, sexo, apariamientos, size, peso, precio, raza);
-        this.numero_esquilado = numero_esquilado;
-        this.calidad_lana = calidad_lana;
-    }
+    
 
     public int getNumero_esquilado() {
         return numero_esquilado;

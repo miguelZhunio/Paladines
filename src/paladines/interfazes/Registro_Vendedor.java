@@ -37,36 +37,36 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        NomVend = new javax.swing.JTextField();
+        txtnom = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        ApllVend = new javax.swing.JTextField();
+        txtapell = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        mailVend = new javax.swing.JTextField();
+        txtmail = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         ciudVend = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        cellVend = new javax.swing.JTextField();
+        txtcell = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        direcVend = new javax.swing.JTextField();
+        txtdic = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         edadVend = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         regisVend = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        CodPostal = new javax.swing.JTextField();
+        txtpost = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        ContraVend = new javax.swing.JPasswordField();
+        txtcontr = new javax.swing.JPasswordField();
         jLabel13 = new javax.swing.JLabel();
-        ContraVend1 = new javax.swing.JPasswordField();
-        CedVende = new javax.swing.JTextField();
+        txtcont = new javax.swing.JPasswordField();
+        txtced = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 102, 0)), "Registro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(102, 102, 0))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 102, 0)), "Registro", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 0))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Bradley Hand ITC", 0, 36)); // NOI18N
@@ -76,17 +76,28 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(153, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel2.setText("Nombres:");
+        jLabel2.setText("Nombre:");
 
-        NomVend.addActionListener(new java.awt.event.ActionListener() {
+        txtnom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NomVendActionPerformed(evt);
+                txtnomActionPerformed(evt);
+            }
+        });
+        txtnom.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnomKeyTyped(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel3.setText("Apellidos:");
+        jLabel3.setText("Apellido:");
+
+        txtapell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtapellKeyTyped(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 102));
@@ -95,6 +106,12 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 102));
         jLabel5.setText(" E-mail");
+
+        txtmail.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtmailKeyTyped(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 102));
@@ -109,17 +126,28 @@ public class Registro_Vendedor extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel7.setText("ConfIrmar Contraseña:");
+        jLabel7.setText("Conformar Contraseña:");
 
-        cellVend.addActionListener(new java.awt.event.ActionListener() {
+        txtcell.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellVendActionPerformed(evt);
+                txtcellActionPerformed(evt);
+            }
+        });
+        txtcell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtcellKeyTyped(evt);
             }
         });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 102));
         jLabel8.setText("Edad");
+
+        txtdic.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtdicKeyTyped(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 102));
@@ -151,13 +179,24 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 102));
         jLabel10.setText("Codigo Postal:");
 
+        txtpost.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtpostKeyTyped(evt);
+            }
+        });
+
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 102));
         jLabel11.setText("Direccion:");
 
-        ContraVend.addActionListener(new java.awt.event.ActionListener() {
+        txtcontr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContraVendActionPerformed(evt);
+                txtcontrActionPerformed(evt);
+            }
+        });
+        txtcontr.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtcontrKeyTyped(evt);
             }
         });
 
@@ -165,9 +204,23 @@ public class Registro_Vendedor extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(0, 0, 102));
         jLabel13.setText("Contraseña:");
 
-        ContraVend1.addActionListener(new java.awt.event.ActionListener() {
+        txtcont.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ContraVend1ActionPerformed(evt);
+                txtcontActionPerformed(evt);
+            }
+        });
+        txtcont.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtcontKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtcontKeyTyped(evt);
+            }
+        });
+
+        txtced.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtcedKeyTyped(evt);
             }
         });
 
@@ -184,13 +237,13 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                                 .addComponent(jLabel5)
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(mailVend, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cellVend, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(txtmail, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcell, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addComponent(jLabel11)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(direcVend, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtdic, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(96, 96, 96))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -207,24 +260,24 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                                                     .addComponent(jLabel6)
                                                     .addGap(27, 27, 27)
                                                     .addComponent(ciudVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(CodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(txtpost, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                             .addComponent(jLabel7)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(ContraVend, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtcontr, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel2)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(NomVend, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE))
+                                                .addComponent(txtnom, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel3)
                                                     .addComponent(jLabel4))
                                                 .addGap(18, 18, 18)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(ApllVend)
-                                                    .addComponent(CedVende)))))
+                                                    .addComponent(txtapell)
+                                                    .addComponent(txtced)))))
                                     .addGap(16, 16, 16)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(89, 89, 89)
@@ -236,8 +289,8 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel13)
                         .addGap(18, 18, 18)
-                        .addComponent(ContraVend1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 32, Short.MAX_VALUE))
+                        .addComponent(txtcont, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 27, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(93, 93, 93)
                 .addComponent(regisVend)
@@ -253,27 +306,27 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NomVend))
+                    .addComponent(txtnom))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ApllVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtapell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(CedVende, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtced, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mailVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ContraVend1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtcont, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ContraVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtcontr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
@@ -283,10 +336,10 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(direcVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtdic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cellVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtcell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(edadVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -295,7 +348,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
                         .addGap(15, 15, 15)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(CodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtpost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(regisVend)
@@ -317,9 +370,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        principal mostrarPrincipal = new principal();
-        mostrarPrincipal.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void regisVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regisVendActionPerformed
@@ -345,21 +396,165 @@ public class Registro_Vendedor extends javax.swing.JFrame {
 //        }
     }//GEN-LAST:event_regisVendActionPerformed
 
-    private void NomVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomVendActionPerformed
+    private void txtnomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NomVendActionPerformed
+    }//GEN-LAST:event_txtnomActionPerformed
 
-    private void cellVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellVendActionPerformed
+    private void txtcellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcellActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cellVendActionPerformed
+    }//GEN-LAST:event_txtcellActionPerformed
 
-    private void ContraVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraVendActionPerformed
+    private void txtcontrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcontrActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ContraVendActionPerformed
+    }//GEN-LAST:event_txtcontrActionPerformed
 
-    private void ContraVend1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraVend1ActionPerformed
+    private void txtcontActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcontActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ContraVend1ActionPerformed
+    }//GEN-LAST:event_txtcontActionPerformed
+
+    private void txtnomKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnomKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+        else if (txtnom.getText().length() >= 20) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtnomKeyTyped
+
+    private void txtapellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapellKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+        else if (txtapell.getText().length() >= 20) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtapellKeyTyped
+
+    private void txtdicKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdicKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+        else if (txtdic.getText().length() >= 50) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtdicKeyTyped
+
+    private void txtcedKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcedKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+
+        if (ced == false&& ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtced.getText().length() >= 10) {
+            evt.consume();
+        }
+    
+    }//GEN-LAST:event_txtcedKeyTyped
+
+    private void txtmailKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtmailKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();}
+        else if (txtmail.getText().length() >= 20) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtmailKeyTyped
+
+    private void txtcontKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcontKeyReleased
+
+    private void txtcontKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean con= aux >= 32&& aux< 126;
+        boolean ret =aux == 127;
+        boolean ent = aux == 10;
+        if(txtcont.getText().length()> 30 && ent== false){
+            evt.consume();
+        }
+        else if (con== false && ret == false ){
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtcontKeyTyped
+
+    private void txtcontrKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontrKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean con= aux >= 32&& aux< 126;
+        boolean ret =aux == 127;
+        boolean ent = aux == 10;
+        if(txtcontr.getText().length()> 25 && ent== false){
+            evt.consume();
+        }
+        else if (con== false && ret == false ){
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtcontrKeyTyped
+
+    private void txtcellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcellKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+
+        if (ced == false&& ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtcell.getText().length() >= 10) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtcellKeyTyped
+
+    private void txtpostKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtpostKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13;
+
+        if (ced == false&& ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtpost.getText().length() >= 6) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtpostKeyTyped
 
     /**
      * @param args the command line arguments
@@ -367,15 +562,7 @@ public class Registro_Vendedor extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ApllVend;
-    private javax.swing.JTextField CedVende;
-    private javax.swing.JTextField CodPostal;
-    private javax.swing.JPasswordField ContraVend;
-    private javax.swing.JPasswordField ContraVend1;
-    private javax.swing.JTextField NomVend;
-    private javax.swing.JTextField cellVend;
     private javax.swing.JComboBox<String> ciudVend;
-    private javax.swing.JTextField direcVend;
     private javax.swing.JSpinner edadVend;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -392,7 +579,15 @@ public class Registro_Vendedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField mailVend;
     private javax.swing.JButton regisVend;
+    private javax.swing.JTextField txtapell;
+    private javax.swing.JTextField txtced;
+    private javax.swing.JTextField txtcell;
+    private javax.swing.JPasswordField txtcont;
+    private javax.swing.JPasswordField txtcontr;
+    private javax.swing.JTextField txtdic;
+    private javax.swing.JTextField txtmail;
+    private javax.swing.JTextField txtnom;
+    private javax.swing.JTextField txtpost;
     // End of variables declaration//GEN-END:variables
 }

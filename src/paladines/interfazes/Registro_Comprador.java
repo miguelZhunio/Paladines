@@ -4,6 +4,8 @@
  */
 package paladines.interfazes;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author IV
@@ -46,6 +48,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
         txtApellido = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         txtCodigoPostal = new javax.swing.JTextField();
+        txtCcalle = new javax.swing.JPasswordField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -57,7 +60,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
         txtEdad = new javax.swing.JSpinner();
         cbCiudad = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        txtCcalle = new javax.swing.JTextField();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -67,11 +69,12 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, -1, -1));
 
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 36)); // NOI18N
         jLabel1.setText("REGISTRO DE CLIENTE");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 430, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 430, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setText("Cedula:");
@@ -111,18 +114,18 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         btnRegresar.setBackground(new java.awt.Color(0, 102, 102));
         btnRegresar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnRegresar.setText("CANCELAR");
+        btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, -1, 40));
+        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 386, -1, 40));
 
         btnCrearCuenta.setBackground(new java.awt.Color(0, 102, 102));
         btnCrearCuenta.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCrearCuenta.setText("CREAR CUENTA");
-        jPanel3.add(btnCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, -1, 40));
+        jPanel3.add(btnCrearCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 386, -1, 40));
 
         txtCedula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +144,11 @@ public class Registro_Comprador extends javax.swing.JFrame {
                 txtNombreActionPerformed(evt);
             }
         });
+        txtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNombreKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 164, 179, -1));
 
         txtApellido.addActionListener(new java.awt.event.ActionListener() {
@@ -148,9 +156,38 @@ public class Registro_Comprador extends javax.swing.JFrame {
                 txtApellidoActionPerformed(evt);
             }
         });
+        txtApellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtApellidoKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 198, 179, -1));
+
+        txtEmail.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtEmailKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(543, 130, 180, -1));
+
+        txtCodigoPostal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCodigoPostalKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtCodigoPostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 234, 90, -1));
+
+        txtCcalle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCcalleActionPerformed(evt);
+            }
+        });
+        txtCcalle.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCcalleKeyTyped(evt);
+            }
+        });
+        jPanel3.add(txtCcalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(543, 190, 180, -1));
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel11.setText("Sexo:");
@@ -162,15 +199,32 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel13.setText("Calle:");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, -1, -1));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, -1));
 
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPasswordActionPerformed(evt);
             }
         });
+        txtPassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtPasswordKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 268, 165, -1));
+
+        txtPasswordConfirmar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtPasswordConfirmarKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtPasswordConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 299, 160, -1));
+
+        txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefonoKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 305, 124, -1));
 
         GrupoSexo.add(rdMasculino);
@@ -194,7 +248,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         jLabel14.setToolTipText("");
         jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(-120, 130, 540, 440));
-        jPanel3.add(txtCcalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 170, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 820, 480));
 
@@ -215,7 +268,6 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
     private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_txtCedulaActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
@@ -225,6 +277,10 @@ public class Registro_Comprador extends javax.swing.JFrame {
     private void txtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtApellidoActionPerformed
+
+    private void txtCcalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCcalleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCcalleActionPerformed
 
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
@@ -236,15 +292,147 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
     private void txtCedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCedulaKeyTyped
         // TODO add your handling code here:
+       char aux = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+
+        if (ced == false&& ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtCedula.getText().length() > 10) {
+            evt.consume();   
+    }//GEN-LAST:event_txtCedulaKeyTyped
+    }
+    private void txtNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyTyped
+        // TODO add your handling code here:
         char aux = evt.getKeyChar();
-        boolean numeros = aux>=48 && aux<=57;
-        if (numeros==false) {
-            System.out.println("Ingreso erroneo: "+evt.getKeyChar());
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+           System.out.println(evt.getKeyChar());
+            evt.consume();}
+         else if (txtNombre.getText().length() >= 20) {
             evt.consume();
         }
-        
-    }//GEN-LAST:event_txtCedulaKeyTyped
+    }//GEN-LAST:event_txtNombreKeyTyped
 
+    private void txtApellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidoKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+           System.out.println(evt.getKeyChar());
+            evt.consume();}
+         else if (txtApellido.getText().length() >= 20) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtApellidoKeyTyped
+
+    private void txtTelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char espa = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean esa = espa == 32;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+
+        if (ced == false&& esa == false && ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtCedula.getText().length() > 10) {
+            evt.consume();}
+    }//GEN-LAST:event_txtTelefonoKeyTyped
+
+    private void txtEmailKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEmailKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        boolean cor = aux >= 64 && aux < 90;
+        boolean cor2 = aux >= 94 && aux < 122;
+        boolean car = aux == 65;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+        if (cor == false&& cor2== false && car == false && ret == false && ent== false) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtEmail.getText().length() > 20) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtEmailKeyTyped
+
+    private void txtCcalleKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCcalleKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean Mayus = aux >= 65 && aux < 90;
+        boolean minus = aux1 >= 94 && aux1 < 122;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+        if (Mayus == false&& minus ==false && ret== false && ent== false) {
+           System.out.println(evt.getKeyChar());
+            evt.consume();}
+         else if (txtTelefono.getText().length() >= 10) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCcalleKeyTyped
+
+    private void txtCodigoPostalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoPostalKeyTyped
+        // TODO add your handling code here:
+        char aux = evt.getKeyChar();
+        char espa = evt.getKeyChar();
+        char aux1 = evt.getKeyChar();
+        boolean ced = aux >= 48 && aux < 58;
+        boolean esa = espa == 32;
+        boolean ret =aux == 8;
+        boolean ent = aux == 13; 
+
+        if (ced == false&& esa == false && ret== false && ent== false ) {
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        } else if (txtCodigoPostal.getText().length() > 6) {
+            evt.consume();   
+    } 
+    }//GEN-LAST:event_txtCodigoPostalKeyTyped
+
+    private void txtPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyTyped
+        // TODO add your handling code here:
+         char aux = evt.getKeyChar();
+        boolean con= aux >= 32&& aux< 126;
+        boolean ret =aux == 127;
+        boolean ent = aux == 10; 
+        if(txtPassword.getText().length()> 25 && ent== false){
+            evt.consume();
+        }      
+        else if (con== false && ret == false ){
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtPasswordKeyTyped
+
+    private void txtPasswordConfirmarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordConfirmarKeyTyped
+        // TODO add your handling code here:char aux = evt.getKeyChar();
+        char aux= evt.getKeyChar();
+        boolean con= aux >= 32&& aux< 126;
+        boolean ret =aux == 127;
+        boolean ent = aux == 10; 
+        if(txtPasswordConfirmar.getText().length()> 25 && ent== false){
+            evt.consume();
+        }      
+        else if (con== false && ret == false ){
+            System.out.println(evt.getKeyChar());
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtPasswordConfirmarKeyTyped
+    
     /**
      * @param args the command line arguments
      */
@@ -275,7 +463,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdFemenino;
     private javax.swing.JRadioButton rdMasculino;
     private javax.swing.JTextField txtApellido;
-    private javax.swing.JTextField txtCcalle;
+    private javax.swing.JPasswordField txtCcalle;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtCodigoPostal;
     private javax.swing.JSpinner txtEdad;

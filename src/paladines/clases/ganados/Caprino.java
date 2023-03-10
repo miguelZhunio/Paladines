@@ -18,11 +18,7 @@ public class Caprino extends Ganado{
         this.presencia_cuernos = presencia_cuernos;
     }
 
-    public Caprino(double cant_leche, boolean presencia_cuernos, String codigo, int edad, char sexo, int apariamientos, double size, double peso, double precio, String raza) {
-        super(codigo, edad, sexo, apariamientos, size, peso, precio, raza);
-        this.cant_leche = cant_leche;
-        this.presencia_cuernos = presencia_cuernos;
-    }
+   
 
     public double getCant_leche() {
         return cant_leche;

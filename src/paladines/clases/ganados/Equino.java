@@ -13,12 +13,21 @@ public class Equino extends Ganado{
         super();
     }
 
-    public Equino(String comportamiento, double velocidad, boolean herraduras, String codigo, int edad, char sexo, int apariamientos, double size, double peso, double precio, String raza) {
-        super(codigo, edad, sexo, apariamientos, size, peso, precio, raza);
+    public Equino(String comportamiento, double velocidad, boolean herraduras) {
         this.comportamiento = comportamiento;
         this.velocidad = velocidad;
         this.herraduras = herraduras;
     }
+
+    public Equino(String comportamiento, double velocidad, boolean herraduras, String CodigoProd, String Tipo, String Peso, String Edad, String Sexo, String Tamaño, String Cabezas, String Apareamiento, String Precio) {
+        super(CodigoProd, Tipo, Peso, Edad, Sexo, Tamaño, Cabezas, Apareamiento, Precio);
+        this.comportamiento = comportamiento;
+        this.velocidad = velocidad;
+        this.herraduras = herraduras;
+    }
+
+    
+    
 
     public String getComportamiento() {
         return comportamiento;

@@ -1,103 +1,173 @@
 package paladines.clases.ganados;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Zhunio MIguel
  */
-class Ganado {
-    private String codigo;
-    private int edad;
-    private char sexo;
-    private int apariamientos;
-    private double size;
-    private double peso;
-    private double precio;
-    private String raza;
-
+class Ganado { 
+  private String CodigoProd;
+   private String Tipo;
+   private String Peso;
+   private String Edad;
+   private String Sexo;
+   private String Tamaño;
+   private String Cabezas;
+   private String Apareamiento;
+   private String Precio;
+   
+   ArrayList<String>listTipo= new ArrayList<>();
     public Ganado() {
-        
     }
 
-    public Ganado(String codigo, int edad, char sexo, int apariamientos, double size, double peso, double precio, String raza) {
-        this.codigo = codigo;
-        this.edad = edad;
-        this.sexo = sexo;
-        this.apariamientos = apariamientos;
-        this.size = size;
-        this.peso = peso;
-        this.precio = precio;
-        this.raza = raza;
+    public Ganado(String CodigoProd, String Tipo, String Peso, String Edad, String Sexo, String Tamaño, String Cabezas, String Apareamiento, String Precio) {
+        this.CodigoProd = CodigoProd;
+        this.Tipo = Tipo;
+        this.Peso = Peso;
+        this.Edad = Edad;
+        this.Sexo = Sexo;
+        this.Tamaño = Tamaño;
+        this.Cabezas = Cabezas;
+        this.Apareamiento = Apareamiento;
+        this.Precio = Precio;
     }
 
-    public String getCodigo() {
-        return codigo;
+    /**
+     * @return the CodigoProd
+     */
+    public String getCodigoProd() {
+        return CodigoProd;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    /**
+     * @param CodigoProd the CodigoProd to set
+     */
+    public void setCodigoProd(String CodigoProd) {
+        this.CodigoProd = CodigoProd;
     }
 
-    public int getEdad() {
-        return edad;
+    /**
+     * @return the Tipo
+     */
+    public String getTipo() {
+        return Tipo;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    /**
+     * @param Tipo the Tipo to set
+     */
+    public void setTipo(String Tipo) {
+        this.Tipo = Tipo;
     }
 
-    public char getSexo() {
-        return sexo;
+    /**
+     * @return the Peso
+     */
+    public String getPeso() {
+        return Peso;
     }
 
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
+    /**
+     * @param Peso the Peso to set
+     */
+    public void setPeso(String Peso) {
+        this.Peso = Peso;
     }
 
-    public int getApariamientos() {
-        return apariamientos;
+    /**
+     * @return the Edad
+     */
+    public String getEdad() {
+        return Edad;
     }
 
-    public void setApariamientos(int apariamientos) {
-        this.apariamientos = apariamientos;
+    /**
+     * @param Edad the Edad to set
+     */
+    public void setEdad(String Edad) {
+        this.Edad = Edad;
     }
 
-    public double getSize() {
-        return size;
+    /**
+     * @return the Sexo
+     */
+    public String getSexo() {
+        return Sexo;
     }
 
-    public void setSize(double size) {
-        this.size = size;
+    /**
+     * @param Sexo the Sexo to set
+     */
+    public void setSexo(String Sexo) {
+        this.Sexo = Sexo;
     }
 
-    public double getPeso() {
-        return peso;
+    /**
+     * @return the Tamaño
+     */
+    public String getTamaño() {
+        return Tamaño;
     }
 
-    public void setPeso(double peso) {
-        this.peso = peso;
+    /**
+     * @param Tamaño the Tamaño to set
+     */
+    public void setTamaño(String Tamaño) {
+        this.Tamaño = Tamaño;
     }
 
-    public double getPrecio() {
-        return precio;
+    /**
+     * @return the Cabezas
+     */
+    public String getCabezas() {
+        return Cabezas;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    /**
+     * @param Cabezas the Cabezas to set
+     */
+    public void setCabezas(String Cabezas) {
+        this.Cabezas = Cabezas;
     }
 
-    public String getRaza() {
-        return raza;
+    /**
+     * @return the Apareamiento
+     */
+    public String getApareamiento() {
+        return Apareamiento;
     }
 
-    public void setRaza(String raza) {
-        this.raza = raza;
+    /**
+     * @param Apareamiento the Apareamiento to set
+     */
+    public void setApareamiento(String Apareamiento) {
+        this.Apareamiento = Apareamiento;
+    }
+
+    /**
+     * @return the Precio
+     */
+    public String getPrecio() {
+        return Precio;
+    }
+
+    /**
+     * @param Precio the Precio to set
+     */
+    public void setPrecio(String Precio) {
+        this.Precio = Precio;
     }
 
     @Override
     public String toString() {
-        return "Ganado{" + "codigo=" + codigo + ", edad=" + edad + ", sexo=" + sexo + ", apariamientos=" + apariamientos + ", size=" + size + ", peso=" + peso + ", precio=" + precio + ", raza=" + raza + '}';
+        return "Caracteristicas{" + "CodigoProd=" + CodigoProd + ", Tipo=" + Tipo + ", Peso=" + Peso + ", Edad=" + Edad + ", Sexo=" + Sexo + ", Tama\u00f1o=" + Tamaño + ", Cabezas=" + Cabezas + ", Apareamiento=" + Apareamiento + ", Precio=" + Precio + '}';
     }
-    
-    
-    
+   public void Tipo(){
+       listTipo.add("BOVINO"+
+               "CAPRINO"+
+               "EQUINO"+
+               "OVINO"+
+               "PORCINO");
+   }  
 }
