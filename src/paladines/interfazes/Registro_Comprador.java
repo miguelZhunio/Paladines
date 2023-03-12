@@ -69,7 +69,7 @@ public class Registro_Comprador extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 153, 153));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 36)); // NOI18N
@@ -114,13 +114,13 @@ public class Registro_Comprador extends javax.swing.JFrame {
 
         btnRegresar.setBackground(new java.awt.Color(0, 102, 102));
         btnRegresar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnRegresar.setText("REGRESAR");
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha-hacia-atras_1.png"))); // NOI18N
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 386, -1, 40));
+        jPanel3.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 30));
 
         btnCrearCuenta.setBackground(new java.awt.Color(0, 102, 102));
         btnCrearCuenta.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N

@@ -182,11 +182,11 @@ public class MenuVendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
-        
         this.dispose();
-        Producto_Registrado  m = new Producto_Registrado();
+        Productos_Registrados m = new Productos_Registrados();
         m.setVisible(true);
+        
+        
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
