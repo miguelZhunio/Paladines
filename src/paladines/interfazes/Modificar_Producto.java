@@ -16,6 +16,9 @@ public class Modificar_Producto extends javax.swing.JFrame {
      */
     public Modificar_Producto() {
         initComponents();
+        initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Editar Productos");
     }
 
     /**

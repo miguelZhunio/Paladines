@@ -16,6 +16,7 @@ public class Menu_Comprador extends javax.swing.JFrame {
     public Menu_Comprador() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Menu Cliente");
     }
 
     /**

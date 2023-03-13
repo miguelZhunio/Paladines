@@ -17,6 +17,8 @@ public class Registro_Comprador extends javax.swing.JFrame {
      */
     public Registro_Comprador() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Registro Cliente");
     }
 
     /**

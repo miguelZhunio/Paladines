@@ -15,6 +15,8 @@ public class Crear_nuevoadministrador extends javax.swing.JFrame {
      */
     public Crear_nuevoadministrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Registro Administrador ");
     }
 
     /**

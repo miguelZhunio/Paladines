@@ -15,6 +15,8 @@ public class Lista_Vendedores extends javax.swing.JFrame {
      */
     public Lista_Vendedores() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Lista de Vendedores");
     }
 
     /**

@@ -30,6 +30,7 @@ public class Registro_Producto extends javax.swing.JFrame {
     public Registro_Producto() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Registro de Productos");
     }
 
     /**

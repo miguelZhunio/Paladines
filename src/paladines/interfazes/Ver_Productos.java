@@ -16,6 +16,7 @@ public class Ver_Productos extends javax.swing.JFrame {
     public Ver_Productos() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Productos Ingresados");
     }
 
     /**

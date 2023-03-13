@@ -17,6 +17,7 @@ public class MenuVendedor extends javax.swing.JFrame {
     public MenuVendedor() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Menú de Vendedor");
     }
 
     /**

@@ -15,6 +15,8 @@ public class mostrar_administrador extends javax.swing.JFrame {
      */
     public mostrar_administrador() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Lista Administradores");
     }
 
     /**

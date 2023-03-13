@@ -16,6 +16,7 @@ public class Comprar_producto extends javax.swing.JFrame {
     public Comprar_producto() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Comprar un producto");
     }
 
     /**

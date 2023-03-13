@@ -14,6 +14,7 @@ public class loginComprador extends javax.swing.JFrame {
     public loginComprador() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Iniciar Sesion");
     }
 
     /**
@@ -25,190 +26,195 @@ public class loginComprador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtCorrCom = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        txtCorrVen = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        Registrate = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        txtConVen = new javax.swing.JPasswordField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtConComp = new javax.swing.JPasswordField();
-        btnIngresarComp = new javax.swing.JButton();
-        btnRegresar = new javax.swing.JButton();
-        btnRegistrarse = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        regresar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Bradley Hand ITC", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel1.setText("Iniciar Sesión Cliente");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
-        jLabel2.setText("Correo");
-
-        txtCorrCom.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtCorrVen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtCorrVen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCorrVenActionPerformed(evt);
+            }
+        });
+        txtCorrVen.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtCorrComKeyTyped(evt);
+                txtCorrVenKeyTyped(evt);
             }
         });
+        jPanel3.add(txtCorrVen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 340, 40));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
-        jLabel3.setText("Contraseña");
-
-        txtConComp.addActionListener(new java.awt.event.ActionListener() {
+        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jCheckBox1.setText("Mostrar contraseña");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtConCompActionPerformed(evt);
+                jCheckBox1ActionPerformed(evt);
             }
         });
-        txtConComp.addKeyListener(new java.awt.event.KeyAdapter() {
+        jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
+
+        Registrate.setBackground(new java.awt.Color(204, 204, 204));
+        Registrate.setForeground(new java.awt.Color(55, 115, 72));
+        Registrate.setText("Registrate ahora");
+        Registrate.setAutoscrolls(true);
+        Registrate.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Registrate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrateActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Registrate, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 140, 40));
+
+        jLabel8.setText("¿Todavía no tienes una cuenta?");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 190, 20));
+
+        jButton1.setBackground(new java.awt.Color(55, 115, 72));
+        jButton1.setForeground(new java.awt.Color(248, 248, 251));
+        jButton1.setText("Iniciar Sesión");
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 330, 30));
+
+        txtConVen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtConVen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtConVenActionPerformed(evt);
+            }
+        });
+        txtConVen.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtConCompKeyTyped(evt);
+                txtConVenKeyTyped(evt);
             }
         });
+        jPanel3.add(txtConVen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 340, 40));
 
-        btnIngresarComp.setBackground(new java.awt.Color(0, 102, 102));
-        btnIngresarComp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iniciar-sesion.png"))); // NOI18N
-        btnIngresarComp.setText("Ingresar");
-        btnIngresarComp.addActionListener(new java.awt.event.ActionListener() {
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setText("Contraseña");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel6.setText("Usuario");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 90, 20));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/Avatar_Container.png"))); // NOI18N
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/Encabezado_login.jpg"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 51)));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/Fondo_blanco.jpg"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 51)));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 450, 370));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(25, 25, 25));
+        jLabel9.setText("¿Todavía no tienes una cuenta? ");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 600, -1, -1));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 450, 480));
+
+        regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/flecha-izquierda.png"))); // NOI18N
+        regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarCompActionPerformed(evt);
+                regresarActionPerformed(evt);
             }
         });
-
-        btnRegresar.setBackground(new java.awt.Color(0, 102, 102));
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha-hacia-atras.png"))); // NOI18N
-        btnRegresar.setText("Regresar");
-        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegresarActionPerformed(evt);
-            }
-        });
-
-        btnRegistrarse.setBackground(new java.awt.Color(0, 102, 102));
-        btnRegistrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/registrarse.png"))); // NOI18N
-        btnRegistrarse.setText("Registrase");
-        btnRegistrarse.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistrarseActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtConComp, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtCorrCom, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(btnIngresarComp)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                        .addComponent(btnRegistrarse)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnRegresar)))
-                .addGap(21, 21, 21))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtCorrCom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txtConComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarComp)
-                    .addComponent(btnRegresar)
-                    .addComponent(btnRegistrarse))
-                .addGap(71, 71, 71))
-        );
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 370, 170));
+        getContentPane().add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/Fondo_loginVendedor.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 640));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtConCompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConCompActionPerformed
+    private void txtCorrVenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorrVenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtConCompActionPerformed
+    }//GEN-LAST:event_txtCorrVenActionPerformed
 
-    private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
+    private void txtCorrVenKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorrVenKeyTyped
         // TODO add your handling code here:
-        
-        Registro_Comprador rgcomprador=new Registro_Comprador();
-        rgcomprador.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnRegistrarseActionPerformed
-
-    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        // TODO add your handling code here:
-        principal princ=new principal();
-        princ.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnRegresarActionPerformed
-
-    private void txtCorrComKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorrComKeyTyped
         char aux = evt.getKeyChar();
         char aux1 = evt.getKeyChar();
-        boolean Mayus = aux >= 65 && aux < 90;
+        boolean Mayus = aux >= 62 && aux < 90;
         boolean minus = aux1 >= 94 && aux1 < 122;
         boolean ret =aux == 8;
         boolean ent = aux == 13;
         if (Mayus == false&& minus ==false && ret== false && ent== false) {
             System.out.println(evt.getKeyChar());
             evt.consume();}
-        else if (txtCorrCom.getText().length() >= 20) {
+        else if (txtCorrVen.getText().length() >= 20) {
             evt.consume();
-        
         }
-             
-    }//GEN-LAST:event_txtCorrComKeyTyped
+    }//GEN-LAST:event_txtCorrVenKeyTyped
 
-    private void btnIngresarCompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarCompActionPerformed
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
-        
-        
-    }//GEN-LAST:event_btnIngresarCompActionPerformed
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void txtConCompKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtConCompKeyTyped
+    private void RegistrateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrateActionPerformed
+
+        this.dispose();
+        Registro_Vendedor registrateAhora = new Registro_Vendedor();
+        registrateAhora.setVisible(true);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegistrateActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        // TODO add your handling code here:
+
+        MenuVendedor menvend=new MenuVendedor();
+        menvend.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtConVenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConVenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtConVenActionPerformed
+
+    private void txtConVenKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtConVenKeyTyped
         // TODO add your handling code here:
         char aux = evt.getKeyChar();
         boolean con= aux >= 32&& aux< 126;
         boolean ret =aux == 127;
         boolean ent = aux == 10;
-        if(txtConComp.getText().length()> 30 && ent== false){
+        if(txtConVen.getText().length()> 30 && ent== false){
             evt.consume();
         }
         else if (con== false && ret == false ){
             System.out.println(evt.getKeyChar());
             evt.consume();}
-    }//GEN-LAST:event_txtConCompKeyTyped
+    }//GEN-LAST:event_txtConVenKeyTyped
+
+    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
+
+        this.dispose();
+        principal regresar = new principal();
+        regresar.setVisible(true);
+    }//GEN-LAST:event_regresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,15 +222,20 @@ public class loginComprador extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnIngresarComp;
-    private javax.swing.JButton btnRegistrarse;
-    private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton Registrate;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField txtConComp;
-    private javax.swing.JTextField txtCorrCom;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton regresar;
+    private javax.swing.JPasswordField txtConVen;
+    private javax.swing.JTextField txtCorrVen;
     // End of variables declaration//GEN-END:variables
 }

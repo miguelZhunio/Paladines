@@ -17,6 +17,8 @@ public class Caracteristicas_Ganado extends javax.swing.JFrame {
      */
     public Caracteristicas_Ganado() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Tipos de Ganado");
     }
 
     /**

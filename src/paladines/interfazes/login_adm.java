@@ -18,6 +18,9 @@ public class login_adm extends javax.swing.JFrame {
      */
     public login_adm() {
         initComponents();
+        this.setTitle("Loggin Administrador");
+        this.setLocationRelativeTo(null);
+        
     }
 
     /**

@@ -16,6 +16,8 @@ public class Eliminar_Producto extends javax.swing.JFrame {
      */
     public Eliminar_Producto() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Eliminar un Producto");
     }
 
     /**

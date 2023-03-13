@@ -18,9 +18,12 @@ public class login_vendedor extends javax.swing.JFrame {
     /**
      * Creates new form login_vendedor
      */
-    public login_vendedor() {
+    public login_vendedor() { 
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Inciar Sesion");
         transpariencia();
+        
         
         
         

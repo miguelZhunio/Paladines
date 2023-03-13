@@ -24,6 +24,8 @@ public class menu_adm extends javax.swing.JFrame {
      */
     public menu_adm() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Menu Administrador");
     }
 
     /**

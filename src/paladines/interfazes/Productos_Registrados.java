@@ -15,6 +15,8 @@ public class Productos_Registrados extends javax.swing.JFrame {
      */
     public Productos_Registrados() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Registroi de productos");
     }
 
     /**

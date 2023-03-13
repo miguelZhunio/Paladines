@@ -23,6 +23,7 @@ public class ListaCompradores extends javax.swing.JFrame {
     public ListaCompradores() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Lista Compradores");
         
         
     }

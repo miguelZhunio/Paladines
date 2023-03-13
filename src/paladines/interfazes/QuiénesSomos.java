@@ -16,6 +16,7 @@ public class QuiénesSomos extends javax.swing.JFrame {
     public QuiénesSomos() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Informacion");
     }
 
     /**
@@ -57,11 +58,12 @@ public class QuiénesSomos extends javax.swing.JFrame {
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("¿Quiénes somos?");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 226, -1));
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 3, 13)); // NOI18N
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("Somos una sistema que ofrece un servicio de compra y venta de ganado.\n\nLos compradores suelen buscar animales sanos y fuertes para criar y vender en\nel futuro, mientras que los vendedores buscan obtener el mejor precio posible por\nsus animales. La finalidad de este sistema es importante ya que tanto compradores \ncomo vendedores puean realizar transacciones justas y honestas para mantener la\nsostenibilidad de la industria ganadera.\nAdemas este sistema tiene una parte apartado en donde se podra pedir el\ntransporte para el ganado, tambien para la factura y una feria en donde podran \nasistir, y observar de forma presencial nuevos ganados.\n\nLos integrantes en la creación de este sisema son:");
         jTextArea1.setEnabled(false);
@@ -76,26 +78,21 @@ public class QuiénesSomos extends javax.swing.JFrame {
         fIsaac.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(fIsaac, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, -1, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Miguel Zhunio");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 91, 33));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Isaac Villa");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 430, 82, 33));
 
         Ferick.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.add(Ferick, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 108, 112));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Erick Guarango");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Jose Benavides");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Sebastian Avila");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 430, -1, 28));
 

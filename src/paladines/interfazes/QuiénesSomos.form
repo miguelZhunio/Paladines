@@ -59,9 +59,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="&#xbf;Qui&#xe9;nes somos?"/>
           </Properties>
           <Constraints>
@@ -85,6 +82,10 @@
             <Component class="javax.swing.JTextArea" name="jTextArea1">
               <Properties>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="13" style="3"/>
+                </Property>
+                <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="Somos una sistema que ofrece un servicio de compra y venta de ganado.&#xa;&#xa;Los compradores suelen buscar animales sanos y fuertes para criar y vender en&#xa;el futuro, mientras que los vendedores buscan obtener el mejor precio posible por&#xa;sus animales. La finalidad de este sistema es importante ya que tanto compradores &#xa;como vendedores puean realizar transacciones justas y honestas para mantener la&#xa;sostenibilidad de la industria ganadera.&#xa;Ademas este sistema tiene una parte apartado en donde se podra pedir el&#xa;transporte para el ganado, tambien para la factura y una feria en donde podran &#xa;asistir, y observar de forma presencial nuevos ganados.&#xa;&#xa;Los integrantes en la creaci&#xf3;n de este sisema son:"/>
                 <Property name="enabled" type="boolean" value="false"/>
@@ -125,9 +126,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Miguel Zhunio"/>
           </Properties>
           <Constraints>
@@ -138,9 +136,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Isaac Villa"/>
           </Properties>
           <Constraints>
@@ -165,9 +160,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Erick Guarango"/>
           </Properties>
           <Constraints>
@@ -178,9 +170,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Jose Benavides"/>
           </Properties>
           <Constraints>
@@ -191,9 +180,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Sebastian Avila"/>
           </Properties>
           <Constraints>
