@@ -37,7 +37,9 @@ public class login_vendedor extends javax.swing.JFrame {
     Registrate.setOpaque(false);
     Registrate.setContentAreaFilled(false);
     Registrate.setBorderPainted(false);
-    
+    regresar.setOpaque(false);
+    regresar.setContentAreaFilled(false);
+    regresar.setBorderPainted(false);       
 }
     
     
@@ -46,6 +48,7 @@ public class login_vendedor extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        regresar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         txtCorrVen = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
@@ -76,6 +79,14 @@ public class login_vendedor extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/flecha-izquierda.png"))); // NOI18N
+        regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regresarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -190,9 +201,10 @@ public class login_vendedor extends javax.swing.JFrame {
 
 
         // TODO add your handling code here:
+        dispose();
         MenuVendedor menvend=new MenuVendedor();
         menvend.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void RegistrateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrateActionPerformed
@@ -242,6 +254,14 @@ public class login_vendedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtConVenActionPerformed
 
+    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
+             
+        this.dispose();
+        principal regresar = new principal();
+        regresar.setVisible(true);
+
+    }//GEN-LAST:event_regresarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Registrate;
@@ -258,6 +278,7 @@ public class login_vendedor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton regresar;
     private javax.swing.JPasswordField txtConVen;
     private javax.swing.JTextField txtCorrVen;
     // End of variables declaration//GEN-END:variables
