@@ -179,7 +179,7 @@ public class Eliminar_Producto extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Funcio para llamra  ala vetana principal
         this.dispose();
-        principal mostrarPrincipal = new principal();
+        menu_adm mostrarPrincipal = new menu_adm();
         mostrarPrincipal.setVisible(true);
     }//GEN-LAST:event_btnRegresarActionPerformed
 

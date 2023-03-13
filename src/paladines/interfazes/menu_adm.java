@@ -56,6 +56,8 @@ public class menu_adm extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
         m2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -231,15 +233,15 @@ public class menu_adm extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(204, 204, 204));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
-        jLabel8.setText("Crear nuevo administrador");
-        m1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 182, 283, 32));
+        jLabel8.setText("Eliminiar producto:");
+        m1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 230, 32));
 
         jLabel9.setBackground(new java.awt.Color(204, 204, 204));
         jLabel9.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(204, 204, 204));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
         jLabel9.setText("Crear feria de ganado");
-        m1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 148, 232, 16));
+        m1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 232, 16));
 
         jLabel10.setBackground(new java.awt.Color(204, 204, 204));
         jLabel10.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
@@ -256,17 +258,44 @@ public class menu_adm extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        m1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 100, -1, -1));
+        m1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(255, 0, 51));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
         jButton2.setText("ir");
-        m1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 141, -1, -1));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        m1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
         jButton3.setText("ir");
-        m1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 182, -1, -1));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        m1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
+
+        jLabel15.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel15.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
+        jLabel15.setText("Crear nuevo administrador");
+        m1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 283, 32));
+
+        jButton8.setBackground(new java.awt.Color(255, 0, 0));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/flecha.png"))); // NOI18N
+        jButton8.setText("Ir");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        m1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 70, -1));
 
         jTabbedPane1.addTab("tab1", m1);
 
@@ -409,15 +438,12 @@ public class menu_adm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 594, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 18, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 594, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -455,6 +481,9 @@ jTabbedPane1.setSelectedIndex(0);
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here
+           this.dispose();
+        mostrar_administrador mostrarPrincipal = new mostrar_administrador();
+        mostrarPrincipal.setVisible(true);
         
 
         
@@ -473,6 +502,26 @@ jTabbedPane1.setSelectedIndex(0);
         Lista_Vendedores registro= new Lista_Vendedores();
         registro.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+               this.dispose();
+            Crear_nuevoadministrador registro= new Crear_nuevoadministrador();
+        registro.setVisible(true);
+    
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+               this.dispose();
+        Eliminar_Producto registro= new Eliminar_Producto();
+        registro.setVisible(true);
+      
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -517,12 +566,14 @@ jTabbedPane1.setSelectedIndex(0);
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
