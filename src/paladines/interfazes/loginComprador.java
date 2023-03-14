@@ -28,7 +28,7 @@ public class loginComprador extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         txtCorrVen = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        vercontra = new javax.swing.JCheckBox();
         Registrate = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -61,26 +61,28 @@ public class loginComprador extends javax.swing.JFrame {
         });
         jPanel3.add(txtCorrVen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 340, 40));
 
-        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Mostrar contraseña");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        vercontra.setBackground(new java.awt.Color(255, 255, 255));
+        vercontra.setText("Mostrar contraseña");
+        vercontra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                vercontraActionPerformed(evt);
             }
         });
-        jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
+        jPanel3.add(vercontra, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
 
         Registrate.setBackground(new java.awt.Color(204, 204, 204));
         Registrate.setForeground(new java.awt.Color(55, 115, 72));
         Registrate.setText("Registrate ahora");
         Registrate.setAutoscrolls(true);
         Registrate.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Registrate.setBorderPainted(false);
+        Registrate.setContentAreaFilled(false);
         Registrate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RegistrateActionPerformed(evt);
             }
         });
-        jPanel3.add(Registrate, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 140, 40));
+        jPanel3.add(Registrate, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 140, 40));
 
         jLabel8.setText("¿Todavía no tienes una cuenta?");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 190, 20));
@@ -120,7 +122,7 @@ public class loginComprador extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/Avatar_Container.png"))); // NOI18N
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/Encabezado_login.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paladines/iconos/Card_Header.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 51)));
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, -1));
 
@@ -136,6 +138,8 @@ public class loginComprador extends javax.swing.JFrame {
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 450, 480));
 
         regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Detalles_loginVendedor/flecha-izquierda.png"))); // NOI18N
+        regresar.setBorderPainted(false);
+        regresar.setContentAreaFilled(false);
         regresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regresarActionPerformed(evt);
@@ -169,9 +173,13 @@ public class loginComprador extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtCorrVenKeyTyped
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void vercontraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vercontraActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+        if(vercontra.isSelected()){
+            txtConVen.setEchoChar((char)0);
+        }else
+            txtConVen.setEchoChar('*');
+    }//GEN-LAST:event_vercontraActionPerformed
 
     private void RegistrateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrateActionPerformed
 
@@ -224,7 +232,6 @@ public class loginComprador extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Registrate;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -237,5 +244,6 @@ public class loginComprador extends javax.swing.JFrame {
     private javax.swing.JButton regresar;
     private javax.swing.JPasswordField txtConVen;
     private javax.swing.JTextField txtCorrVen;
+    private javax.swing.JCheckBox vercontra;
     // End of variables declaration//GEN-END:variables
 }

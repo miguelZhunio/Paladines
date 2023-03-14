@@ -12,6 +12,8 @@ import javax.swing.JOptionPane;
  * @author ASUS TUF
  */
 public class login_adm extends javax.swing.JFrame {
+    String us= "0105591630";
+    String ps="adm001";
 
     /**
      * Creates new form login_adm
@@ -215,20 +217,28 @@ public class login_adm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-       this.dispose();
+       if(txtUsuario.getText().equals(us)){
+           if(txtPassword.getText().equals(ps)){
+              this.dispose();
         menu_adm registro= new menu_adm();
-        registro.setVisible(true);
+        registro.setVisible(true); 
+           } else {
+               JOptionPane.showMessageDialog(null, "La Contraseña es incorrecta");
+           }
+       }else JOptionPane.showMessageDialog(null, "El Usuario es incorrecto");
        
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void txtUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyTyped
         // TODO add your handling code here:
            char aux = evt.getKeyChar();
-        boolean numeros = aux >= '0' && aux <= '9';
-        if (!numeros){
+        boolean numeros = aux >= 48 && aux <= 58;
+        boolean bs= aux == 8;
+        if (numeros == false && bs== false ){
             JOptionPane.showMessageDialog(this,"CARACTER INCORRECTO:  "+ evt.getKeyChar());
             evt.consume();
-        }else if (txtUsuario.getText().length() >=9){
+        }else if (txtUsuario.getText().length() >=10){
+            
             evt.consume();
         }
     }//GEN-LAST:event_txtUsuarioKeyTyped

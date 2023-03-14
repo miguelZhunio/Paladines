@@ -54,7 +54,7 @@ public class login_vendedor extends javax.swing.JFrame {
         regresar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         txtCorrVen = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        vercontra = new javax.swing.JCheckBox();
         Registrate = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -107,14 +107,14 @@ public class login_vendedor extends javax.swing.JFrame {
         });
         jPanel3.add(txtCorrVen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 340, 40));
 
-        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Mostrar contraseña");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        vercontra.setBackground(new java.awt.Color(255, 255, 255));
+        vercontra.setText("Mostrar contraseña");
+        vercontra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                vercontraActionPerformed(evt);
             }
         });
-        jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
+        jPanel3.add(vercontra, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
 
         Registrate.setForeground(new java.awt.Color(55, 115, 72));
         Registrate.setText("Registrate ahora");
@@ -249,9 +249,13 @@ public class login_vendedor extends javax.swing.JFrame {
             evt.consume();}
     }//GEN-LAST:event_txtConVenKeyTyped
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void vercontraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vercontraActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+                if(vercontra.isSelected()){
+            txtConVen.setEchoChar((char)0);
+        }else
+            txtConVen.setEchoChar('*');
+    }//GEN-LAST:event_vercontraActionPerformed
 
     private void txtConVenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConVenActionPerformed
         // TODO add your handling code here:
@@ -269,7 +273,6 @@ public class login_vendedor extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Registrate;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -284,5 +287,6 @@ public class login_vendedor extends javax.swing.JFrame {
     private javax.swing.JButton regresar;
     private javax.swing.JPasswordField txtConVen;
     private javax.swing.JTextField txtCorrVen;
+    private javax.swing.JCheckBox vercontra;
     // End of variables declaration//GEN-END:variables
 }

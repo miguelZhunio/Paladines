@@ -15,6 +15,8 @@ public class Feria_Interfaz extends javax.swing.JFrame {
      * Creates new form Feria_Interfaz
      */
     public Feria_Interfaz() {
+        this.setLocationRelativeTo(null);
+        this.setTitle("Feria Ganadera - Registro");
         initComponents();
         transpariencia();
     }
